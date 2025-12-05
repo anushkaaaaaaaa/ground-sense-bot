@@ -1,157 +1,221 @@
-# PS CHOSEN - SIH25066 (Development of an Al-driven ChatBOT for INGRES as a virtuall assistant)
+# Ground Sense Bot 🤖
 
-This README provides an overview of the project, including team details, relevant links, tasks completed, tech stack, key features, and steps to run the project locally.
+An intelligent AI-powered chatbot for India's groundwater data analytics, featuring real-time insights, interactive visualizations, and comprehensive data analysis capabilities.
 
-## Team Details
+## ✨ Features
 
-**Team Name:** Mercury
+- 🤖 **AI-Powered Analysis** - Advanced groundwater data insights using Google Gemini AI
+- 💬 **Natural Language Chat** - Conversational interface for data queries
+- 📱 **Responsive Design** - Works seamlessly on all devices
+- 🎨 **Modern UI** - Beautiful animations and smooth interactions
+- 🌍 **Multi-language Support** - English and Hindi language options
+- 📁 **File Upload Support** - Analyze custom datasets
+- 🔒 **Secure Authentication** - API key management system
+- 📥 **Report Download** - Save and share reports as PDF or images
 
-**Team Leader:** [@hxrshxz](https://github.com/hxrshxz)
+## 🚀 Quick Start
 
-**Team Members:**
+### Local Development
 
-- **Harsh** - 2024UIC3571 - [@hxrshxz](https://github.com/hxrshxz)
-- **Anushka** - 2024UIC3570 - [@anushkaaaaaaaa](https://github.com/anushkaaaaaaaa)
-- **Kunal** - 2024UIC3509 - [@kunal-595](https://github.com/kunal-595)
-- **Anvay** - 2024UIC3580 - [@AnvayKharb](https://github.com/AnvayKharb)
-- **Priyanshu** - 2024UIC3506 - [@Priyanshu-rgbb](https://github.com/Priyanshu-rgbb)
-- **Himanshi** - 2025UEE4486 - [@hiiiimaaaanshiiii](https://github.com/hiiiimaaaanshiiii)
+1. **Clone the repository:**
 
-## Project Links
+   ```bash
+   git clone https://github.com/your-username/ground-sense-bot.git
+   cd ground-sense-bot
+   ```
 
-- **SIH Presentation:** [Internal PPT Mercury (PDF)](files/Internal_PPT_Mercury.pdf)
-- **Video Demonstration:** [Watch Video](https://youtu.be/TrgzAlbYNBg)
-- **Live Deployment:** [View Deployment](https://ground-sense-bot.vercel.app/)
-- **Source Code:** [GitHub Repository](https://github.com/hxrshxz/ground-sense-bot)
+2. **Install dependencies:**
 
----
+   ```bash
+   npm install
+   ```
 
-## ✅ Tasks Accomplished
+3. **Set up environment:**
 
-Our team successfully designed, developed, and deployed a full-stack solution with the following key accomplishments:
+   ```bash
+   cp .env.example .env
+   # Edit .env with your Gemini API key
+   ```
 
-- [x] **Task 1: Core AI Chatbot Interface & UX**
-  - Developed a dynamic, responsive, and intuitive chat interface using **React** and **TypeScript**, ensuring a seamless user experience on both desktop and mobile devices.
+4. **Start development server:**
 
-- [x] **Task 2: Dynamic Data Visualization Engine**
-  - Engineered a powerful component-based rendering system that allows the AI to generate and display rich, interactive visualizations—including **line charts, bar charts, pie charts, and specialized data cards**—directly within the chat conversation.
+   ```bash
+   npm run dev
+   ```
 
-- [x] **Task 3: Structured AI Response Service**
-  - Designed a sophisticated service that maps natural language queries to predefined, structured AI responses. This allows for the delivery of rich, multi-component data dossiers instead of just plain text, providing a superior analytical experience.
+5. **Open your browser:**
+   ```
+   http://localhost:5173
+   ```
 
-- [x] **Task 4: Multi-Modal, Voice, and Multilingual Support**
-  - Implemented an "Analyze Map" feature for multi-modal input and integrated **voice recognition** for hands-free interaction. Added support for multiple Indian regional languages to enhance accessibility.
+### Production Build
 
-- [x] **Task 5: Scalable Go Backend Architecture**
-  - Built a robust, production-ready backend in **Go (Golang)** featuring a RESTful API, JWT-based authentication, rate limiting, and secure middleware. The entire backend is containerized with **Docker** for seamless deployment and scalability.
-
----
-
-## 🛠️ Technology Stack
-
-This project leverages a modern, high-performance technology stack chosen for scalability, developer experience, and powerful AI capabilities.
-
-### 🌐 Frontend
-- **React & Vite**
-  > For a blazing-fast, component-based user interface.
-- **TypeScript**
-  > To ensure code quality, maintainability, and type safety.
-- **Tailwind CSS**
-  > For rapid, utility-first styling and a clean design system.
-- **Chart.js & Recharts**
-  > For creating beautiful, interactive, and data-rich charts and graphs.
-- **Framer Motion**
-  > To provide fluid animations and an engaging user experience.
-
-### ⚙️ Backend
-- **Go (Golang)**
-  > Chosen for its exceptional performance, concurrency, and suitability for building scalable microservices and APIs.
-- **PostgreSQL**
-  > A powerful, open-source object-relational database system known for its reliability and robustness.
-- **Docker**
-  > Used to containerize the Go application and its database services, ensuring consistent and reproducible deployments.
-
-### 🧠 Artificial Intelligence
-- **Google Gemini**
-  > Leveraged for its advanced natural language understanding, contextual reasoning, and ability to generate structured data for our visualization engine.
-
----
-
-## ✨ Key Features
-
-Our solution is packed with features designed to meet and exceed the requirements of the problem statement.
-
-| Feature | Description |
-| :--- | :--- |
-| 💬 **Conversational Data Querying** | Ask complex questions in plain English or regional languages and get instant, accurate answers. |
-| 📊 **Interactive Visualizations** | The AI generates rich, interactive charts, graphs, and data cards on-the-fly to visualize information. |
-| 🗺️ **Multi-Modal Analysis** | Upload an image of a map, and the AI will analyze the depicted regions to provide a comprehensive hydrogeological report. |
-| 🎙️ **Voice-Enabled Co-Pilot Mode** | A hands-free mode that provides spoken responses and listens for follow-up questions to guide your analysis. |
-| 🌐 **Multilingual Support** | Full support for English and several Indian regional languages, making the platform accessible to a wider audience. |
-| 📄 **Export & Share Reports** | Easily download any AI-generated report or visualization as a **PDF or PNG**, or share it with colleagues. |
-
----
-
-## 🚀 Local Setup
-
-Follow these steps to get the Ground-Sense AI Assistant running on your local machine.
-
-### 📋 Prerequisites
-
-Make sure you have the following installed on your system:
-- [ ] Git
-- [ ] Node.js (v18 or higher)
-- [ ] Go (Golang) (v1.21 or higher)
-- [ ] Docker & Docker Compose
-
-### 1. Clone the Repository
-Open your terminal and run the following commands:
 ```bash
-git clone https://github.com/hxrshxz/ground-sense-bot.git
-cd ground-sense-bot
+npm run build
+npm run preview
 ```
 
-### 2. Set Up the Frontend (React)
-The frontend requires a Google Gemini API key to power the AI features.
+## 🔧 Configuration
 
-- **Navigate back to the root project directory:**
-  ```bash
-  cd ..
-  ```
-- **Create the frontend environment file:**
-  ```bash
-  cp .env.example .env
-  ```
-- **Add your Gemini API Key:** Open the newly created `.env` file and add your key. You can get one from **[Google AI Studio](https://makersuite.google.com/app/apikey)**.
-  ```env
-  VITE_GEMINI_API_KEY=YOUR_API_KEY_HERE
-  ```
-- **Install dependencies and run the app:**
-  ```bash
-  npm install
-  npm run dev
-  ```
-  
-### 3. Set Up the Backend (Go & PostgreSQL)
-The backend is fully containerized with Docker, making setup incredibly simple.
+Create a `.env` file with your configuration:
 
-- **Navigate to the backend directory:**
-  ```bash
-  cd backend
-  ```
-- **Create the environment file:** (No modifications are needed for local Docker setup)
-  ```bash
-  cp .env.example .env
-  ```
-- **Launch the services:**
-  ```bash
-  docker-compose up -d --build
-  ```
-> The backend server will now be running on `http://localhost:8080`.
+```env
+VITE_GEMINI_API_KEY=your_gemini_api_key_here
+VITE_API_BASE_URL=http://localhost:8080/api/v1
+```
 
-### 4. Access the Application
-Once both services are running, open your web browser and navigate to:
+## 📚 Usage Examples
 
-**[http://localhost:5173](http://localhost:5173)**
+### Sample Queries
 
-You should now be greeted with the INGRES AI Assistant interface, ready to answer your queries!
+- "Show data for Delhi block"
+- "List all critical blocks in Rajasthan"
+- "Generate a proactive insight summary"
+- "Compare extraction stages of and Delhi"
+- "What are the rainfall patterns this year?"
+
+### API Integration
+
+## Groundwater State Deep Dive Component
+
+An advanced `StateDeepDiveCard` component has been added for rich single-state groundwater analytics.
+
+Usage example (direct import):
+
+```tsx
+import StateDeepDiveCard from "@/components/cards/StateDeepDiveCard";
+import { PUNJAB_PROFILE } from "@/data/stateGroundwaterData";
+
+export function Demo() {
+  return <StateDeepDiveCard state={PUNJAB_PROFILE} />;
+}
+```
+
+Data shape (`StateGroundwaterProfile`) includes:
+
+- extractionStage (%), annualDeclineM (m/yr)
+- timeSeries (extraction, recharge, net)
+- sectors, drivers, rechargeComponents, riskFactors, recommendations.
+
+The card provides animated tabs: Overview, Sectors, Trends, Recharge, Drivers, Risk, Actions.
+
+You can bind future AI or API outputs by mapping model JSON into a `StateGroundwaterProfile` object.
+
+### Automatic Trigger
+
+When you click the Analyze Map button, after the groundwater analysis response renders, the app now automatically appends a `StateDeepDiveCard` (currently seeded with the Punjab profile) to give an immediate high-fidelity single-state diagnostic. You can later adapt this to dynamically select the state based on detected map region metadata.
+
+### Dynamic State Detection & Commands
+
+The system now:
+
+- Detects state names (Punjab, Delhi, Rajasthan) inside AI / map analysis output and swaps the deep dive to the detected state.
+- Provides a chat command: `deep dive delhi` (or `state deep dive rajasthan`) to inject the interactive card manually.
+- Prevents duplicate deep dive cards from appearing back-to-back.
+
+The chatbot integrates with:
+
+## 🏗️ Project Structure
+
+````
+
+Or via barrel:
+
+```tsx
+import { StateDeepDiveCard } from "@/components/cards";
+import { PUNJAB_PROFILE } from "@/data/stateGroundwaterData";
+
+export function Demo() {
+   return <StateDeepDiveCard state={PUNJAB_PROFILE} />;
+}
+````
+
+ground-sense-bot/
+├── public/
+│ └── placeholder.svg # Default placeholder image
+├── src/
+│ ├── components/
+│ │ ├── INGRESAssistant.tsx # Main chatbot component
+│ │ ├── BusinessTools.tsx # Dashboard component
+│ │ ├── ApiKeyContext.tsx # API key management
+│ │ └── ui/ # UI components
+│ ├── pages/
+│ │ ├── Index.tsx # Main page
+│ │ └── NotFound.tsx # 404 page
+│ ├── services/
+│ │ └── geminiApi.ts # Gemini AI integration
+│ └── lib/
+│ └── utils.ts # Utility functions
+└── README.md # This file
+
+```
+
+## 🛠️ Technologies Used
+
+- **Frontend:** React 18, TypeScript, Vite
+- **Styling:** Tailwind CSS, Framer Motion
+- **AI:** Google Gemini AI
+- **Icons:** Lucide React
+- **Charts:** Recharts
+- **State:** React Query, Context API
+
+## 🔒 Security
+
+- API keys are stored securely in environment variables
+- No sensitive data is exposed in client-side code
+- HTTPS required for production deployments
+- CORS configured for cross-origin embedding
+
+## 📱 Mobile Support
+
+- Fully responsive design
+- Touch-optimized interactions
+- Mobile-first approach
+- Optimized for all screen sizes
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 📞 Support
+
+For support and questions:
+
+- 📧 Email: support@ground-sense-bot.com
+- 🐛 Issues: GitHub Issues
+
+## � Downloading Reports
+
+GroundSense Bot provides the ability to download any generated report in multiple formats:
+
+1. **PDF Download**: Perfect for sharing in formal contexts or archiving data.
+2. **Image Download**: Quick visual capture of any report for easy sharing.
+3. **Share Feature**: On compatible devices, directly share reports through messaging apps, email, etc.
+
+To download a report:
+
+1. Generate any report by asking a question to the AI assistant
+2. Once the report is displayed, look for the "Download" button at the bottom
+3. Choose your preferred format (PDF or Image) or use the Share option
+4. Save the file to your device or share it directly
+
+This feature works with all report types including block assessments, comparison charts, trend analyses, and policy recommendations.
+
+## �🙏 Acknowledgments
+
+- Google Gemini AI for powering the conversational interface
+- India's Central Ground Water Board for data insights
+- Open source community for amazing tools and libraries
+
+---
+
+**Built with ❤️ for India's groundwater conservation**
+```
